@@ -20,5 +20,11 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@wharfkit/session": "^0.3.2",
+		"@wharfkit/wallet-plugin-anchor": "^0.3.4",
+		"@wharfkit/wallet-plugin-cloudwallet": "^0.3.2",
+		"@wharfkit/web-ui-renderer": "^0.3.7"
+	}
 }
