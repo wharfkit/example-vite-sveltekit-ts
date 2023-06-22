@@ -2,7 +2,7 @@
     import SessionKit, { BrowserLocalStorage, Session } from '@wharfkit/session'
     import { WalletPluginAnchor } from '@wharfkit/wallet-plugin-anchor'
     import { WalletPluginCloudWallet } from '@wharfkit/wallet-plugin-cloudwallet'
-    import WebUIRenderer from '@wharfkit/web-ui-renderer'
+    import WebRenderer from '@wharfkit/web-renderer'
     import { browser } from '$app/environment'
     import { onMount } from 'svelte'
 
@@ -10,7 +10,7 @@
     let sessionKit: SessionKit
 
     if (browser) {
-        const ui = new WebUIRenderer()
+        const ui = new WebRenderer()
 
         sessionKit = new SessionKit({
             appName: 'demo',
